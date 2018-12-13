@@ -1,18 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Nostalgic Ciak</title>
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
+	<style>
+        body {
+    background-color: lightpink;
+   
+}
+
+.golden {
+    font-size: 40px;
+    color: darkgoldenrod;
+}
+.start {
+    font-size: 40px;
+    color: darkgray;
+    
+}
+.fun {
+    font-size: 40px;
+    color: cyan;
+}
+.love {
+    font-size: 40px;
+    color: red;
+}
+.drama {
+    font-size: 40px;
+    color: blueviolet;
+}
+.winners {
+    font-size: 40px;
+    color: blanchedalmond;
+}
+
+
+.gold {
+    color: darkgoldenrod;
+}
+.hot {
+    color: deeppink;
+}
+.blondes {
+    color: deeppink;
+}
+p {
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+
+}
+
+.seven {
+    color: deeppink;
+}
+
+
+.murder {
+    color: deeppink;
+}
+.roma {
+    color: deeppink;
+}
+
+
+.monkey {
+    color: deeppink;
+}
+.marriage {
+    color: crimson;
+}
+.stop {
+    color: crimson;
+}
+.paris {
+    color: crimson;
+}
+.dance {
+    color: crimson;
+}
+.night {
+    color: crimson;
+}
+.rain {
+    color: crimson;
+}
+.tiffany {
+    color: cornflowerblue;
+}
+.rebel {
+    color: cornflowerblue;
+}
+.big {
+    color: cornflowerblue;
+}
+.casablanca {
+    color: cornflowerblue;
+}
+.wind {
+    color: cornflowerblue;
+}
+.splendor {
+    color: cornflowerblue;
+}
+        
+                h3 {
+	cursor:pointer;
+}
+
+#container {
+	width:980px;
+	margin: 0 auto;
+	background-color:hotpink;
+	border: solid 2px #666;
+	padding:10px;
+}
+    .centered {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        h1 {
+            text-align: center;
+        }
+        
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        footer {
+            text-align: center;
+            
+        }
+    
+    
+    </style>
+    
+      <script
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    
+    
+    
+    </script>
+    <script>
+        $(document).ready(function() {
+        $('.answer').hide(); //hide all of the answers
+        $('#container h3') .click(function() {
+        $(this).next('.answer').slideToggle();
+        }); //end click
+         
+         
+    }); //end document ready
+   
+    </script>
+	
 </head>
 <body>
-  <h1 class="start">The Beginning</h1>
+   <h1 class="start">The Beginning</h1>
+   <div id="container">
+    <h1>Curiosities</h1>
+    
+    <h3>Why was it called the Golden Age Of Hollywood?</h3>
+    <div class="answer">
+     The Golden Age is so called because of the amount of money the movies produced and the images of the glittering and glamorous movie stars that filled the movie screens.
+    </div>
+        
+    <h3>Who discovered Hollywood?</h3>
+    <div class="answer">
+    Harvey Henderson Wilcox owned a ranch west of the city of Los Angeles,which his wife Daeida named Hollywood, and that they founded together.
+    </div>
+    
+    <h3>Who created the Hollywood sign?</h3>
+    <div class="answer">
+    	The sign was created as a real-estate advertisement. By 1923 Los Angeles publisher Harry Chandles had decided to invest in an upscale real-estate development call Hollywoodland, which capitalized on the growing recognition of Hollywood as a movie industry mecca.
+    </div>
+        
+    
+</div>
+<br>
   
   
    
    <main>
-      <img src="img/ciak.jpg" alt="ciak action">
-      <footer>Courtesy of Pixers</footer>
+      
+     
      
    <header>  
        
@@ -24,11 +198,15 @@
             <li><a href="romancemovies.html">Romances</a></li>
               <li><a href="dramamovies.html">Dramas</a></li>
               <li><a href="awards.html">Awards</a></li>
+                <li><a href="info.html">Information</a></li>
               
               
            </ul>
        </nav>
-      </header>  
+      </header>
+      <img src="img/hollywood.JPG" alt="hollywood">
+       <footer>Courtesy of Rotten Tomatoes</footer> 
+  
        <p>The birth of Cinema dates back on December 28 1895 in Paris by Lumière Brothers.
 The first films were in black and white,no sound and run time less than a minute.
 The first film studios were built in 1897;in the 1900s the popularity of movies increased
@@ -37,8 +215,8 @@ for their roles.The first Oscars Ceremony was held on May 16 1929 at the Hollywo
 in Los Angeles.The ceremony was hosted by Douglas Fairbanks and it was the only one not to be broadcast on radio or television.By the end of 1929 Hollywood,a neighborhood in Los Angeles,became what we all know it is today,the symbol of entertainment business.</p>                    
    </main>
     
- <img src="img/hollywood.JPG" alt="hollywood"> 
- <footer>Courtesy of Rotten Tomatoes</footer>  
+  
+   
 
 </body>
 </html>

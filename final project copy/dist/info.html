@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>The Odyssey</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <h1>BECOME A MEMBER OF THE COMMUNITY</h1>
+    <style>
+        body {
+    background-color: lightpink;
+   
+}
+
+h1 {
+	border-bottom: solid 3px #009;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	text-shadow: 2px 2px 2px #999;
+     color: darkgray;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+h3 {
+	cursor:pointer;
+}
+
+#container {
+	width:980px;
+	margin: 0 auto;
+	background-color:#eee;
+	border: solid 2px #666;
+	padding:10px;
+}
+
+.label {
+	float:left;
+	width:220px;
+	text-align:right;
+	clear:left;
+	margin-right:15px;
+	font-weight:bold;
+}
+
+#submit { 
+	margin-left:235px; 
+}
+    
+    </style>
+    
+    <script
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+    
+    
+    
+    </script>
+    <script>
+            $(document).ready(function() {
+        $('#other').hide();
+        $('#relationship').change(function() {
+            if($(this).val() == 'Single') {
+                $('#spouse_name').attr('disabled' , true);
+                
+            } else {
+                $('#spouse_name').attr('disabled' , false);
+            }
+        });
+        $('#refer').change(function() {
+            if($(this).val() == 'Home') {
+                $('#why').hide();
+            }else {
+                    $('#why').show();
+                }
+        }); //end document ready
+    }); //end document ready
+    </script>
+</head>
+<body>
+   <header>
+       
+   <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="odysseus.html">Odysseus</a></li>
+        <li><a href="odysseusjourney.html">Journey</a></li>
+        <li><a href="creatures.html">Creatures</a></li>
+        <li><a href="odysseangods.html">Gods</a></li>
+        <li><a href="info.html">Information</a></li>
+        
+        
+    </ul>
+     
+       
+       
+   </nav>    
+   </header>
+   <div id="container">
+    <h1>SOMETHING ABOUT YOU</h1>
+
+    
+   <form action="" method="post" name="register" id="register">
+        <p>
+            <label for="first_name" class="label">First Name:</label>
+            <input type="text" name="first_name" id="first_name" />
+        </p>
+        <p>
+            <label for="last_name" class="label">Last Name:</label>
+            <input type="text" name="last_name" id="last_name" />
+
+        </p>
+        <p>
+            <label for="e_mail" class="label">Email address</label>
+            <input type="text" name="e_mail" id="e_mail"/>
+        </p>
+        <p>
+            
+             <label for="relationship" class="label">Marital Status? </label>
+             <select name="relationship" id="relationship">
+              <option value="">Select One</option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+
+            </select>
+        </p>
+        <p>
+            <label for="spouse_name" class="label">Spouse Name:</label>
+            <input type="text" name="spouse_name" id="spouse_name" />
+        </p>
+        <p>
+            <label for="refer" class="label">What part did you enjoy the most? </label>
+
+            <select name="refer" id="refer">
+              <option value="">Select One</option>
+              <option value="History">History</option>
+              <option value="Comedies">Comedies</option>
+              <option value="Dramamovies">Dramamovies</option>
+              <option value="Romancemovies">Romancemovies</option>
+              <option value="Awards">Awards</option>
+              <option value="Home">Home</option>
+
+   
+             
+            </select>
+        </p>
+        <p id="why">
+            <label for="referWhy" class="label">Why </label>
+            <input type="text" name="referWhy" id="referWhy"/>
+        </p>
+        <p>
+
+            <label for="comments" class="label">Any additional comments? </label>
+            <textarea name="comments" rows="4" id="comments"></textarea>
+        </p>
+        <p>
+            <input type="submit" name="submit" id="submit" value="Register" />
+        </p>
+    </form>
+        
+    
+
+</div>
+    
+</body>
+</html>
